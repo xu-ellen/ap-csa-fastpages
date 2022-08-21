@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Fastpages Notebook Blog Post",
-            "content": "About . This is a journal for AP CSA. .",
-            "url": "https://xu-ellen.github.io/ap-csa-fastpages/jupyter/2022/08/22/blog-post.html",
-            "relUrl": "/jupyter/2022/08/22/blog-post.html",
+            "title": "Python Blog Post",
+            "content": "Python . print (“Hello”) .",
+            "url": "https://xu-ellen.github.io/ap-csa-fastpages/jupyter/2022/08/22/python.html",
+            "relUrl": "/jupyter/2022/08/22/python.html",
             "date": " • Aug 22, 2022"
         }
         
@@ -13,8 +13,19 @@
   
     
         ,"post1": {
-            "title": "AP CSA",
-            "content": "AP CSA .",
+            "title": "Java Notebook Blog Post",
+            "content": "Java . System.out.println(“Hello”) .",
+            "url": "https://xu-ellen.github.io/ap-csa-fastpages/jupyter/2022/08/22/java.html",
+            "relUrl": "/jupyter/2022/08/22/java.html",
+            "date": " • Aug 22, 2022"
+        }
+        
+    
+  
+    
+        ,"post2": {
+            "title": "First post",
+            "content": "First post . Hi, this is my first post! . .",
             "url": "https://xu-ellen.github.io/ap-csa-fastpages/markdown/2022/08/21/first-post.html",
             "relUrl": "/markdown/2022/08/21/first-post.html",
             "date": " • Aug 21, 2022"
