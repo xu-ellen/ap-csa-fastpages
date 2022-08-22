@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Python Blog Post",
-            "content": "Python . print (“Hello”) .",
+            "content": "Python . print (&quot;Hello&quot;) . Hello .",
             "url": "https://xu-ellen.github.io/ap-csa-fastpages/jupyter/2022/08/22/python.html",
             "relUrl": "/jupyter/2022/08/22/python.html",
             "date": " • Aug 22, 2022"
@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Java Notebook Blog Post",
-            "content": "Java . System.out.println(“Hello”) .",
+            "content": "Java . System.out.println(&quot;Hello&quot;) . Hello .",
             "url": "https://xu-ellen.github.io/ap-csa-fastpages/jupyter/2022/08/22/java.html",
             "relUrl": "/jupyter/2022/08/22/java.html",
             "date": " • Aug 22, 2022"
