@@ -9,4 +9,4 @@ title: First post
 
 Hi, this is my first post!
 
-![image.png](../images/first-post-generated.png)
+![Welcome image](/images/welcome.png)
