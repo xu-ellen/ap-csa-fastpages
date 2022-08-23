@@ -2,6 +2,17 @@
   
     
         "post0": {
+            "title": "Bash Blog Post",
+            "content": "echo &quot;hi&quot; . Bash Blog Post . Is there anything we use to verify tools we install? Think about versions. | . apt list --installed or dpkg can be used to see installed packages and verify the version of the tools we install. . Is there anything we could verify with Anaconda? | . conda list or conda info can be used to see installed packages within conda environment or see what environments we have on our machine. . How would you update a repository? | . apt update or apt upgrade can be used to update the packages repository. . Really cool would be automating a procedure from installation. | . apt install -y &lt;package&gt; can be used to install a package and automated into a script. .",
+            "url": "https://xu-ellen.github.io/ap-csa-fastpages/jupyter/2022/08/23/bash.html",
+            "relUrl": "/jupyter/2022/08/23/bash.html",
+            "date": " • Aug 23, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
             "title": "Python Blog Post",
             "content": "Python . print (&quot;Hello&quot;) . Hello .",
             "url": "https://xu-ellen.github.io/ap-csa-fastpages/jupyter/2022/08/22/python.html",
@@ -12,7 +23,7 @@
     
   
     
-        ,"post1": {
+        ,"post2": {
             "title": "Java Notebook Blog Post",
             "content": "Java . System.out.println(&quot;Hello&quot;) . Hello .",
             "url": "https://xu-ellen.github.io/ap-csa-fastpages/jupyter/2022/08/22/java.html",
@@ -23,7 +34,7 @@
     
   
     
-        ,"post2": {
+        ,"post3": {
             "title": "First post",
             "content": "First post . Hi, this is my first post! . .",
             "url": "https://xu-ellen.github.io/ap-csa-fastpages/markdown/2022/08/21/first-post.html",
@@ -51,26 +62,48 @@
   
 
   
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
+      ,"page3": {
+          "title": "Notes",
+          "content": "Notes on Java . Primitives . Primitives are built-in datatypes in Java. They are: int, long, float, double, boolean, char, byte, short. Lower case is primitive, uppercase is a wrapper class. Each time you use a wrapper class, you turn the primitive into an object which has methods you can execute (ex. String.[command]). .",
+          "url": "https://xu-ellen.github.io/ap-csa-fastpages/notes/",
+          "relUrl": "/notes/",
+          "date": ""
+      }
+      
   
 
   
   
 
   
-      ,"page10": {
+
+  
+  
+
+  
+
+  
+      ,"page8": {
+          "title": "Vocab",
+          "content": "Vocab . Bytecode is the machine code that is executed by the JVM. .",
+          "url": "https://xu-ellen.github.io/ap-csa-fastpages/vocab/",
+          "relUrl": "/vocab/",
+          "date": ""
+      }
+      
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://xu-ellen.github.io/ap-csa-fastpages/robots.txt",
