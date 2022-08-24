@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Primitives",
-            "content": "",
+            "content": "Build your own Jupyter Notebook meeting these College Board and CTE competencies . Define in a Class the following data types Demonstrate use of Primitives: int, double, boolean, string Demonstrate use of Wrapper Class object: String Describe in comments how each data type choice is appropriate to application Perform arithmetic expressions and assignment in a program code Code.org Lesson Determine what is result is in a variable as a result of an data type and expression (ie integer vs double) Perform an arithmetic expressions that uses casting, add comments that show how it produces desired result. Learn more by watching this College Board video Perform compound assignment operator (ie +=), add comments to describe the result of operator Additional requirements . Multiple inputs and outputs are required Jupyter NoteBook when committed to Fastpages must display Outputs Building something that helps you study for another class is encouraged, here are some ideas: MPG, GPA, Celsius &lt;--&gt; Fahrenheit, The nth Fibonacci, GCD, Primes in range of numbers, Points per Game . Computing force exerted by two charges . public class ForceCalculator { } .",
             "url": "https://xu-ellen.github.io/ap-csa-fastpages/jupyter/2022/08/23/primitives.html",
             "relUrl": "/jupyter/2022/08/23/primitives.html",
             "date": " • Aug 23, 2022"
