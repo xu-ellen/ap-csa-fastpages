@@ -32,7 +32,7 @@ Determine what is result is in a variable as a result of an data type and expres
 Perform an arithmetic expressions that uses casting, add comments that show how it produces desired result. Learn more by watching this College Board video
 Perform compound assignment operator (ie +=), add comments to describe the result of operator
 Additional requirements</p>
-<p>Multiple inputs and outputs are required
+<p>Multiple dds and outputs are required
 Jupyter NoteBook when committed to Fastpages must display Outputs
 Building something that helps you study for another class is encouraged, here are some ideas: MPG, GPA, Celsius &lt;--&gt; Fahrenheit, The nth Fibonacci, GCD, Primes in range of numbers, Points per Game</p>
 
@@ -55,43 +55,60 @@ Building something that helps you study for another class is encouraged, here ar
 <div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ForceCalculator</span> <span class="p">{</span>
 
     <span class="kd">public</span> <span class="nf">ForceCalculator</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">force</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">double</span><span class="p">;</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">q1</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">double</span><span class="p">;</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">q2</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">double</span><span class="p">;</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">r</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">double</span><span class="p">;</span>
         <span class="k">this</span><span class="p">.</span><span class="na">enterVals</span><span class="p">();</span>
     <span class="p">}</span>
 
+    <span class="kd">private</span> <span class="kt">double</span> <span class="n">force</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="n">q1</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="n">q2</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="n">r</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">double</span> <span class="n">k</span> <span class="o">=</span> <span class="mf">8.987551787e9</span><span class="p">;</span>
+
     <span class="kd">private</span> <span class="kt">void</span> <span class="nf">enterVals</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">Scanner</span> <span class="n">dd</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Enter q1 (charge of first particle): &quot;</span><span class="p">);</span>
-        <span class="k">try</span> <span class="p">{</span>
-            <span class="k">this</span><span class="p">.</span><span class="na">q1</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
-            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">q1</span><span class="p">);</span>
-        <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Not an double (form like 9.99), &quot;</span> <span class="o">+</span> <span class="n">e</span><span class="p">);</span>
+
+        <span class="k">while</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">Scanner</span> <span class="n">dd</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Enter q1 (charge of first particle): &quot;</span><span class="p">);</span>
+            <span class="k">try</span> <span class="p">{</span>
+                <span class="n">q1</span> <span class="o">=</span> <span class="n">dd</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">q1</span><span class="p">);</span>
+                <span class="k">break</span><span class="p">;</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Not an double (form like 9.99), &quot;</span> <span class="o">+</span> <span class="n">e</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="n">dd</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
         <span class="p">}</span>
 
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Enter q2 (charge of second particle): &quot;</span><span class="p">);</span>
-        <span class="k">try</span> <span class="p">{</span>
-            <span class="k">this</span><span class="p">.</span><span class="na">q2</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
-            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">q2</span><span class="p">);</span>
-        <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Not an double (form like 9.99), &quot;</span> <span class="o">+</span> <span class="n">e</span><span class="p">);</span>
+        <span class="k">while</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">Scanner</span> <span class="n">dd</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Enter q2 (charge of second particle): &quot;</span><span class="p">);</span>
+            <span class="k">try</span> <span class="p">{</span>
+                <span class="n">q2</span> <span class="o">=</span> <span class="n">dd</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">q2</span><span class="p">);</span>
+                <span class="k">break</span><span class="p">;</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Not an double (form like 9.99), &quot;</span> <span class="o">+</span> <span class="n">e</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="n">dd</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
         <span class="p">}</span>
 
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Enter r (distance between particles): &quot;</span><span class="p">);</span>
-        <span class="k">try</span> <span class="p">{</span>
-            <span class="k">this</span><span class="p">.</span><span class="na">r</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
-            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">r</span><span class="p">);</span>
-        <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Not an double (form like 9.99), &quot;</span> <span class="o">+</span> <span class="n">e</span><span class="p">);</span>
+        <span class="k">while</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">Scanner</span> <span class="n">dd</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Enter r (distance between particles): &quot;</span><span class="p">);</span>
+            <span class="k">try</span> <span class="p">{</span>
+                <span class="n">r</span> <span class="o">=</span> <span class="n">dd</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">r</span><span class="p">);</span>
+                <span class="k">break</span><span class="p">;</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Not an double (form like 9.99), &quot;</span> <span class="o">+</span> <span class="n">e</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="n">dd</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
         <span class="p">}</span>
     <span class="p">}</span>
 
     <span class="kd">public</span> <span class="kt">double</span> <span class="nf">calculate</span><span class="p">()</span> <span class="p">{</span>
         <span class="kt">double</span> <span class="n">k</span> <span class="o">=</span> <span class="mf">8.987551787e9</span><span class="p">;</span>
-        <span class="kt">double</span> <span class="n">force</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="na">q1</span> <span class="o">*</span> <span class="k">this</span><span class="p">.</span><span class="na">q2</span> <span class="o">*</span> <span class="n">k</span> <span class="o">/</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">r</span> <span class="o">*</span> <span class="k">this</span><span class="p">.</span><span class="na">r</span><span class="p">);</span>
+        <span class="n">force</span> <span class="o">=</span> <span class="n">q1</span> <span class="o">*</span> <span class="n">q2</span> <span class="o">*</span> <span class="n">k</span> <span class="o">/</span> <span class="p">(</span><span class="n">q2</span> <span class="o">*</span> <span class="n">q2</span><span class="p">);</span>
         <span class="k">return</span> <span class="n">force</span><span class="p">;</span>
     <span class="p">}</span>
 
@@ -104,31 +121,6 @@ Building something that helps you study for another class is encouraged, here ar
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        this.force = new double</span><span class="ansi-black-intense-fg ansi-bold">;</span>
-<span class="ansi-red-intense-fg ansi-bold">&#39;[&#39; expected</span>
-
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        this.q1 = new double</span><span class="ansi-black-intense-fg ansi-bold">;</span>
-<span class="ansi-red-intense-fg ansi-bold">&#39;[&#39; expected</span>
-
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        this.q2 = new double</span><span class="ansi-black-intense-fg ansi-bold">;</span>
-<span class="ansi-red-intense-fg ansi-bold">&#39;[&#39; expected</span>
-
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        this.r = new double</span><span class="ansi-black-intense-fg ansi-bold">;</span>
-<span class="ansi-red-intense-fg ansi-bold">&#39;[&#39; expected</span>
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -146,6 +138,23 @@ Building something that helps you study for another class is encouraged, here ar
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Enter q1 (charge of first particle): 1.0
+Enter q2 (charge of second particle): 2.0
+Enter r (distance between particles): 1.0
+Force: 4493775893.50
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
