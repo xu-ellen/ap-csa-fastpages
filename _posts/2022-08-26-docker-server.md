@@ -50,6 +50,10 @@ If that's the case, make sure this setting is toggled on in Docker desktop setti
 
 It should ask you to reload and if you run the command again it should work now.
 
+### Check locally
+
+![image](https://user-images.githubusercontent.com/56745453/186968485-a2d02d10-d53a-4b88-b6b1-bbcc2f69d1cc.png)
+
 ### Resources
 
 https://github.com/fastai/fastpages/blob/master/_fastpages_docs/DEVELOPMENT.md
