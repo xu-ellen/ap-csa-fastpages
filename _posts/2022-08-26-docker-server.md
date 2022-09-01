@@ -13,20 +13,20 @@ It's often useful to test pages locally before deploying, as it can save time an
 1. Download Docker desktop
 2. (For Windows) Set up Docker with WSL
 3. Run `make server` in repo
-4. Navigate to https://127.0.0.1:4000/ to view your blog
+4. Navigate to localhost link (ex. https://127.0.0.1:4000/) to view your blog
 
-### Installation
+### 1. Installation
 
 Docker is a lightweight method to build, deploy, run, update and manage containers. Download Docker desktop from following links:
 
 Windows: https://docs.docker.com/desktop/install/windows-install/
 Mac: https://docs.docker.com/desktop/install/mac-install/.
 
-#### Special steps for Windows
+### 2. (For Windows) Set up Docker with WSL
 
 For Windows, to set up Docker with WSL use https://docs.docker.com/desktop/windows/wsl/.
 
-### Docker command
+### 3. Run `make server` in repo
 
 In the local repository, make sure you are cd'ed to the base/root directory (i.e. where the Makefile is). For me that was the ap-csa-fastpages directory.
 
@@ -50,9 +50,39 @@ If that's the case, make sure this setting is toggled on in Docker desktop setti
 
 It should ask you to reload and if you run the command again it should work now.
 
-### Check locally
+### 4. View blog
+
+After running, make look for link to run Server. For me, this was https://127.0.0.1:4000/:
+> Server address: https://127.0.0.1:4000/
+
+To stop server and build again after making edits:
+> Server running... press ctrl-c to stop.
+
+Repeat make server if you have made updates to your blog and want to serve locally again.
 
 ![image](https://user-images.githubusercontent.com/56745453/186968485-a2d02d10-d53a-4b88-b6b1-bbcc2f69d1cc.png)
+
+#### Add to .gitignore
+
+A side effect of building locally is that it converts all the .ipynb and .docx files to .md. This means that some files will have duplicates after building -- one in .ipynb or .docx, another in .md form.
+
+To avoid duplicates when pushing to github, add the files to your .gitignore (courtesy of Mr. M for pointing this out):
+
+```
+# Ignore from local build
+
+images/copied_from_nb/  # images folder
+_posts/2022-06-14-Curriculum-Map-David--2021-2022.md    # example of markdown files from build
+_posts/2022-07-06-PBL-FE-js_tutorial.md
+_posts/2022-08-15-TP100-anatomy.md
+_posts/2022-08-15-TT000-windowsinstall.md
+_posts/2022-08-22-TP110-primitives.md
+_posts/2022-08-22-TT110-anthony_and_sahil.md
+_posts/2022-08-22-TT110-bash_tutorial.md
+_posts/2022-08-29-TP120-using_java_objects.md
+_posts/2022-09-05-TP130-boolean_ifs.md
+_posts/2022-09-05-TT130-rapidapi.md
+```
 
 ### Resources
 
