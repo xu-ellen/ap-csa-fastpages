@@ -136,72 +136,6 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Data-types-usage">Data types usage<a class="anchor-link" href="#Data-types-usage"> </a></h2>
-</div>
-</div>
-</div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
-<span class="kt">float</span> <span class="n">b</span> <span class="o">=</span> <span class="mf">4.0</span><span class="p">;</span>
-<span class="kt">double</span> <span class="n">c</span> <span class="o">=</span> <span class="mf">4.0</span><span class="p">;</span>
-<span class="kt">char</span> <span class="n">d</span> <span class="o">=</span> <span class="sc">&#39;4&#39;</span><span class="p">;</span>
-<span class="n">String</span> <span class="n">e</span> <span class="o">=</span> <span class="s">&quot;4&quot;</span><span class="p">;</span>
-<span class="kt">boolean</span> <span class="n">f</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Print">Print<a class="anchor-link" href="#Print"> </a></h2>
-</div>
-</div>
-</div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="n">String</span> <span class="n">x</span> <span class="o">=</span> <span class="s">&quot;hi i&#39;m ellen&quot;</span><span class="p">;</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>hi i&#39;m ellen
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <p>Build your own Jupyter Notebook meeting these College Board and CTE competencies</p>
 <p>Define in a Class the following data types
 Demonstrate use of Primitives: int, double, boolean, string
@@ -235,16 +169,16 @@ Building something that helps you study for another class is encouraged, here ar
 <div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ForceCalculator</span> <span class="p">{</span>
 
     <span class="kd">public</span> <span class="nf">ForceCalculator</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">enterVals</span><span class="p">();</span>   <span class="c1">// constructor calls enterVals()</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">enterVals</span><span class="p">();</span>
     <span class="p">}</span>
 
-    <span class="kd">private</span> <span class="kt">double</span> <span class="n">force</span><span class="p">;</span>   <span class="c1">// initialize private variables</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="n">force</span><span class="p">;</span>
     <span class="kd">private</span> <span class="kt">double</span> <span class="n">q1</span><span class="p">;</span>
     <span class="kd">private</span> <span class="kt">double</span> <span class="n">q2</span><span class="p">;</span>
     <span class="kd">private</span> <span class="kt">double</span> <span class="n">r</span><span class="p">;</span>
     <span class="kd">private</span> <span class="kd">static</span> <span class="kt">double</span> <span class="n">k</span> <span class="o">=</span> <span class="mf">8.987551787e9</span><span class="p">;</span>
 
-    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">enterVals</span><span class="p">()</span> <span class="p">{</span>  <span class="c1">// method to enter values</span>
+    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">enterVals</span><span class="p">()</span> <span class="p">{</span>
 
         <span class="k">while</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
             <span class="n">Scanner</span> <span class="n">dd</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
@@ -253,7 +187,7 @@ Building something that helps you study for another class is encouraged, here ar
                 <span class="n">q1</span> <span class="o">=</span> <span class="n">dd</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
                 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">q1</span><span class="p">);</span>
                 <span class="k">break</span><span class="p">;</span>
-            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// catch non-numerical input</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
                 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Not an double (form like 9.99), &quot;</span> <span class="o">+</span> <span class="n">e</span><span class="p">);</span>
             <span class="p">}</span>
             <span class="n">dd</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
@@ -286,13 +220,13 @@ Building something that helps you study for another class is encouraged, here ar
         <span class="p">}</span>
     <span class="p">}</span>
 
-    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">calculate</span><span class="p">()</span> <span class="p">{</span> <span class="c1">// method to calculate force</span>
+    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">calculate</span><span class="p">()</span> <span class="p">{</span>
         <span class="kt">double</span> <span class="n">k</span> <span class="o">=</span> <span class="mf">8.987551787e9</span><span class="p">;</span>
         <span class="n">force</span> <span class="o">=</span> <span class="n">q1</span> <span class="o">*</span> <span class="n">q2</span> <span class="o">*</span> <span class="n">k</span> <span class="o">/</span> <span class="p">(</span><span class="n">q2</span> <span class="o">*</span> <span class="n">q2</span><span class="p">);</span>
         <span class="k">return</span> <span class="n">force</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>    <span class="c1">// main method</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">ForceCalculator</span> <span class="n">force</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ForceCalculator</span><span class="p">();</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Force: &quot;</span> <span class="o">+</span> <span class="n">String</span><span class="p">.</span><span class="na">format</span><span class="p">(</span><span class="s">&quot;%.2f&quot;</span><span class="p">,</span> <span class="n">force</span><span class="p">.</span><span class="na">calculate</span><span class="p">()));</span>
     <span class="p">}</span>
