@@ -13,7 +13,7 @@ It's often useful to test pages locally before deploying, as it can save time an
 1. Download Docker desktop
 2. (For Windows) Set up Docker with WSL
 3. Run `make server` in repo
-4. Navigate to localhost link (ex. https://127.0.0.1:4000/) to view your blog
+4. Navigate to localhost link (ex. http://127.0.0.1:4000/{repo name}) to view your blog
 
 ### 1. Installation
 
@@ -58,8 +58,8 @@ It should ask you to reload and if you run the command again it should work now.
 
 ### 4. View blog
 
-After running, make look for link to run Server. For me, this was https://127.0.0.1:4000/:
-> Server address: https://127.0.0.1:4000/
+After running, make look for link to run Server. For me, this was http://127.0.0.1:4000/{repo name}:
+> Server address: http://127.0.0.1:4000/
 
 To stop server and build again after making edits:
 > Server running... press ctrl-c to stop.
