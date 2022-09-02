@@ -22,9 +22,15 @@ Docker is a lightweight method to build, deploy, run, update and manage containe
 Windows: https://docs.docker.com/desktop/install/windows-install/
 Mac: https://docs.docker.com/desktop/install/mac-install/.
 
+Now, each time you want to use Docker, you can start Docker desktop to get it up and running. Make sure you do this before building locally!
+
 ### 2. (For Windows) Set up Docker with WSL
 
 For Windows, to set up Docker with WSL use https://docs.docker.com/desktop/windows/wsl/.
+
+### (Optional) Download Docker extention in VSCode
+
+VSCode has an extension too make it easier to manage docker containers and images directly in your IDE. To download, go to the Extensions tab of VSCode (left bar, or Ctrl+Shift+X), search "Docker" and download the extension from Microsoft. You should now see a docker icon on the left bar, which you can click on to see your Docker connections.
 
 ### 3. Run `make server` in repo
 
