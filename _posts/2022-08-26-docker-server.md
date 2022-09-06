@@ -4,6 +4,7 @@ layout: post
 description: Serving fastpages locally using docker.
 categories: [markdown]
 title: Docker server
+author: Ellen Xu
 ---
 
 It's often useful to test pages locally before deploying, as it can save time and be helpful for testing quick changes/debugging. In this blog we'll learn how to deploy fastpages locally using Docker.

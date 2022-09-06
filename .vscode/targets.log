@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Sep  2 10:01:28 2022
+# Make data base, printed on Tue Sep  6 09:16:28 2022
 
 # Variables
 
@@ -17,7 +17,7 @@ make: *** No rule to make target 'all'.  Stop.
 # automatic
 ?F = $(notdir $?)
 # environment
-WSLENV = VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up
+WSLENV = VSCODE_WSL_EXT_LOCATION/up
 # default
 .SHELLFLAGS := -c
 # automatic
@@ -53,9 +53,7 @@ XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-7cc16bb1-448d-48ca-b459-ec05d35fb14f.sock
-# environment
-VSCODE_SERVER_TAR = /mnt/c/Users/ellen/AppData/Local/Temp/vscode-remote-wsl/784b0177c56c607789f9638da7b6bf3230d47a8c/vscode-server-stable-linux-x64.tar.gz
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-9a473ced-16fe-404d-a182-7dbaad408f6d.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -73,7 +71,7 @@ CODE = /mnt/c/Users/ellen/Documents/code/
 # default
 .LOADED := 
 # environment
-WSL_INTEROP = /run/WSL/12_interop
+WSL_INTEROP = /run/WSL/14_interop
 # environment
 PULSE_SERVER = /mnt/wslg/PulseServer
 # environment
@@ -167,7 +165,7 @@ WSL_DISTRO_NAME = Ubuntu
 # environment
 _CE_CONDA = 
 # variable set hash-table stats:
-# Load=77/1024=8%, Rehash=0, Collisions=5/102=5%
+# Load=76/1024=7%, Rehash=0, Collisions=5/101=5%
 
 # Pattern-specific Variable Values
 
@@ -278,9 +276,9 @@ help:
 
 bash-jekyll: .FORCE
 #  Implicit rule search has not been done.
- 
 #  Modification time never checked.
 #  File has not been updated.
+ 
 #  recipe to execute (from 'Makefile', line 46):
 	docker-compose exec jekyll /bin/bash
 
@@ -312,6 +310,6 @@ convert: .FORCE
 # strcache performance: lookups = 75 / hit rate = 34%
 # hash-table stats:
 # Load=49/8192=1%, Rehash=0, Collisions=1/75=1%
-# Finished Make data base on Fri Sep  2 10:01:28 2022
+# Finished Make data base on Tue Sep  6 09:16:28 2022
 
  
