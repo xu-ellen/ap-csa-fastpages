@@ -500,11 +500,11 @@ De Morgan's law of confusing code block
 <div class=" highlight hl-java"><pre><span></span><span class="kt">boolean</span> <span class="n">a</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 <span class="kt">boolean</span> <span class="n">b</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 
-<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">a</span> <span class="o">&amp;</span> <span class="o">!</span><span class="n">b</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// original method</span>
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">a</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">b</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// original method</span>
     <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"a and b are false"</span><span class="p">);</span>
 <span class="p">}</span>
 
-<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">a</span> <span class="o">&amp;</span> <span class="n">b</span><span class="p">))</span> <span class="p">{</span> <span class="c1">// de Morgan's law</span>
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">a</span> <span class="o">||</span> <span class="n">b</span><span class="p">))</span> <span class="p">{</span> <span class="c1">// de Morgan's law</span>
     <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"a and b are false"</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
