@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Sep  9 10:47:23 2022
+# Make data base, printed on Mon Sep 12 08:46:46 2022
 
 # Variables
 
@@ -53,7 +53,7 @@ XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-da02881d-e17e-4f6e-a3d0-ad51c70cb6da.sock
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-9e6f0bfc-3854-48e4-a219-6b07c70a8051.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -277,7 +277,6 @@ help:
 bash-jekyll: .FORCE
 #  Implicit rule search has not been done.
 #  Modification time never checked.
- 
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 46):
 	docker-compose exec jekyll /bin/bash
@@ -303,6 +302,7 @@ convert: .FORCE
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
+ 
 
 # strcache buffers: 1 (0) / strings = 49 / storage = 485 B / avg = 9 B
 # current buf: size = 8162 B / used = 485 B / count = 49 / avg = 9 B
@@ -310,6 +310,6 @@ convert: .FORCE
 # strcache performance: lookups = 75 / hit rate = 34%
 # hash-table stats:
 # Load=49/8192=1%, Rehash=0, Collisions=1/75=1%
-# Finished Make data base on Fri Sep  9 10:47:23 2022
+# Finished Make data base on Mon Sep 12 08:46:46 2022
 
  
