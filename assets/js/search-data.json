@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "AWS and Docker",
-            "content": "Checking the Docker image . .",
+            "content": "Screenshots verifying Docker/AWS deployment . Checking the Docker image . . Checking curl localhost:8085 . . Checking deployment . .",
             "url": "https://xu-ellen.github.io/ap-csa-fastpages/markdown/2022/09/08/aws-docker.html",
             "relUrl": "/markdown/2022/09/08/aws-docker.html",
             "date": " • Sep 8, 2022"
