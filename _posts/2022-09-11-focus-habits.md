@@ -1,9 +1,9 @@
 ---
 toc: true
 layout: post
-description: Focus and Habits
+description: Notes from video and personal blog
 categories: [markdown]
-title: Notes from video and personal blog
+title: Focus and Habits
 ---
 
 ### Video notes
