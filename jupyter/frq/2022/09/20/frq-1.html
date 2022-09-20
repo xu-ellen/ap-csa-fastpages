@@ -170,6 +170,8 @@ window.onload = wrap_img;
             <span class="n">count</span><span class="o">++</span><span class="p">;</span>
         <span class="p">}</span>
     <span class="p">}</span>
+
+    <span class="k">return</span> <span class="n">count</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 
@@ -204,7 +206,7 @@ window.onload = wrap_img;
 <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">dayOfWeek</span><span class="p">(</span><span class="kt">int</span> <span class="n">month</span><span class="p">,</span> <span class="kt">int</span> <span class="n">day</span><span class="p">,</span> <span class="kt">int</span> <span class="n">year</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">first</span> <span class="o">=</span> <span class="n">firstDayofYear</span><span class="p">(</span><span class="n">year</span><span class="p">);</span>   <span class="c1">// eg. 3 for Wed</span>
     <span class="n">days</span> <span class="o">=</span> <span class="n">dayOfYear</span><span class="p">(</span><span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="p">,</span> <span class="n">year</span><span class="p">);</span> <span class="c1">// eg. day 59</span>
-    <span class="k">return</span> <span class="p">(</span><span class="n">first</span> <span class="o">+</span> <span class="n">days</span><span class="p">)</span> <span class="o">%</span> <span class="mi">7</span><span class="p">;</span>  <span class="c1">// eg. 3 + 59 = 62 % 7 = 4 Thurs</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">first</span> <span class="o">+</span> <span class="n">days</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="mi">7</span><span class="p">;</span>  <span class="c1">// eg. 3 + 59 = 62 % 7 = 4 Thurs</span>
 <span class="p">}</span>
 </pre></div>
 
