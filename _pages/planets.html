@@ -1,0 +1,129 @@
+---
+layout: default
+permalink: /planets/
+title: Planets
+search_exclude: true
+---
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>  
+    <meta charset="utf-8">  
+    <title>  
+        Planets  
+    </title>
+</head>
+
+<!-- Create text inputs for q1, q2, r -->
+
+<body>
+
+    <h1>
+        Planets
+    </h1>
+
+<!-- Create div for planets -->
+
+    <div id="planets">
+
+    </div>
+
+</body>
+
+<script>
+    
+    function Planet(mass, radius, name) {
+        this.mass = mass;
+        this.radius = radius;
+        this.name = name;
+        this.moon = null;
+    }
+
+    Planet.prototype.density = function() {
+        return this.mass / (4 / 3 * Math.PI * this.radius ** 3);
+    }
+
+    Planet.prototype.volume = function() {
+        return 4 / 3 * Math.PI * this.radius ** 3;
+    }
+
+    Planet.prototype.surfaceArea = function() {
+        return 4 * Math.PI * this.radius ** 2;
+    }
+
+    Planet.prototype.gravAccel = function() {
+        return 6.674e-11 * this.mass / this.radius ** 2;
+    }
+
+    Planet.prototype.gravForce = function(mass) {
+        return this.gravAccel() * mass;
+    }
+
+    Planet.prototype.escapeVelocity = function() {
+        return Math.sqrt(2 * this.gravAccel() * this.radius);
+    }
+
+    var earth = new Planet(5.972e24, 6371e3, "Earth");
+    var moon = new Planet(7.34767309e22, 1737.1e3, "Moon");
+
+    earth.moon = moon;
+
+    // console.log(earth);
+
+    var planets = [
+        new Planet(5.972e24, 6371e3, "Earth"),
+        new Planet(7.34767309e22, 1737.1e3, "Moon"),
+        new Planet(1.989e30, 6.957e8, "Sun"),
+        new Planet(1.898e27, 3.39e6, "Mercury"),
+        new Planet(5.683e26, 6.0518e6, "Venus"),
+        new Planet(6.39e23, 3.3895e6, "Mars"),
+        new Planet(1.898e27, 6.0518e7, "Jupiter"),
+        new Planet(5.683e26, 3.3895e7, "Saturn"),
+        new Planet(6.39e23, 6.0518e7, "Uranus"),
+        new Planet(1.898e27, 3.3895e7, "Neptune"),
+        new Planet(5.683e26, 6.0518e7, "Pluto"),
+    ];
+
+    function System(planets) {
+        this.planets = planets;
+        this.planets.forEach(function(planet) {
+            this[planet.name] = planet;
+        }, this);
+
+        this.moons = planets.filter(function(planet) {
+            return planet.moon;
+        });
+
+        this.moons.forEach(function(moon) {
+            this[moon.name] = moon;
+        }, this);
+
+    }
+
+    solar = new System(planets);
+
+    solar.prototype._toHtml = function() {
+        var html = "<table>";
+        html += "<tr><th>Planet</th><th>Mass</th><th>Radius</th><th>Density</th><th>Volume</th><th>Surface Area</th><th>Grav. Accel.</th><th>Escape Velocity</th></tr>";
+        this.planets.forEach(function(planet) {
+            html += "<tr>";
+            html += "<td>" + planet.name + "</td>";
+            html += "<td>" + planet.mass + "</td>";
+            html += "<td>" + planet.radius + "</td>";
+            html += "<td>" + planet.density() + "</td>";
+            html += "<td>" + planet.volume() + "</td>";
+            html += "<td>" + planet.surfaceArea() + "</td>";
+            html += "<td>" + planet.gravAccel() + "</td>";
+            html += "<td>" + planet.escapeVelocity() + "</td>";
+            html += "</tr>";
+        });
+        html += "</table>";
+        return html;
+    }
+
+    // print to div planets
+    document.getElementById("planets").innerHTML = solar._toHtml();
+
+</script>
