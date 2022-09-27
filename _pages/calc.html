@@ -45,6 +45,14 @@ search_exclude: true
 
     <!-- </div> -->
 
+<!-- Create div for output -->
+    
+        <!-- <div> -->
+    
+            <p id="result"></p>
+    
+        <!-- </div> -->
+
 </body>
 
 <script>
@@ -55,11 +63,13 @@ search_exclude: true
         var q1 = document.getElementById("q1").value;
         var q2 = document.getElementById("q2").value;
         var r = document.getElementById("r").value;
+        var k = 8.99 * Math.pow(10, 9);
 
         // Calculate the result
-        var result = (q1 * q2) / (r * r);
+        var result = k * (q1 * q2) / (r * r);
 
         // Display the result
-        alert("The result is " + result);
+        // alert("The result is " + result);
+        document.getElementById("result").innerHTML = "The result is " + result;
     }
 </script>
