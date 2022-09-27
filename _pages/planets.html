@@ -105,7 +105,7 @@ search_exclude: true
     solar = new System(planets);
     console.log(solar);
 
-    solar.prototype._toHtml = function() {
+    System.prototype._toHtml = function() {
         var html = "<table>";
         html += "<tr><th>Planet</th><th>Mass</th><th>Radius</th><th>Density</th><th>Volume</th><th>Surface Area</th><th>Grav. Accel.</th><th>Escape Velocity</th></tr>";
         this.planets.forEach(function(planet) {
