@@ -103,6 +103,7 @@ search_exclude: true
     }
 
     solar = new System(planets);
+    console.log(solar);
 
     solar.prototype._toHtml = function() {
         var html = "<table>";
@@ -124,6 +125,7 @@ search_exclude: true
     }
 
     // print to div planets
+    console.log(solar._toHtml())
     document.getElementById("planets").innerHTML = solar._toHtml();
 
 </script>
