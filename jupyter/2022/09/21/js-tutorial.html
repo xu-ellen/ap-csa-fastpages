@@ -138,7 +138,11 @@ window.onload = wrap_img;
 </li>
 <li class="toc-entry toc-h1"><a href="#Timer">Timer </a>
 <ul>
-<li class="toc-entry toc-h2"><a href="#Hacks">Hacks </a></li>
+<li class="toc-entry toc-h2"><a href="#Hacks">Hacks </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Class-Structure-for-Planets">Class Structure for Planets </a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul><!--
@@ -776,6 +780,84 @@ object ; { name: 'Mr M', ghID: 'jm1021', classOf: 1977, role: 'Teacher' }
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Class-Structure-for-Planets">
+<a class="anchor" href="#Class-Structure-for-Planets" aria-hidden="true"><span class="octicon octicon-link"></span></a>Class Structure for Planets<a class="anchor-link" href="#Class-Structure-for-Planets"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="kd">function</span> <span class="nx">Planet</span><span class="p">(</span><span class="nx">mass</span><span class="p">,</span> <span class="nx">radius</span><span class="p">,</span> <span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">mass</span> <span class="o">=</span> <span class="nx">mass</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">radius</span> <span class="o">=</span> <span class="nx">radius</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">moon</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nx">Planet</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">density</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">mass</span> <span class="o">/</span> <span class="p">(</span><span class="mf">4</span> <span class="o">/</span> <span class="mf">3</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span> <span class="o">*</span> <span class="k">this</span><span class="p">.</span><span class="nx">radius</span> <span class="o">**</span> <span class="mf">3</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">Planet</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">volume</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="mf">4</span> <span class="o">/</span> <span class="mf">3</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span> <span class="o">*</span> <span class="k">this</span><span class="p">.</span><span class="nx">radius</span> <span class="o">**</span> <span class="mf">3</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nx">Planet</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">surfaceArea</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="mf">4</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span> <span class="o">*</span> <span class="k">this</span><span class="p">.</span><span class="nx">radius</span> <span class="o">**</span> <span class="mf">2</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nx">Planet</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">gravAccel</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="mf">6.674e-11</span> <span class="o">*</span> <span class="k">this</span><span class="p">.</span><span class="nx">mass</span> <span class="o">/</span> <span class="k">this</span><span class="p">.</span><span class="nx">radius</span> <span class="o">**</span> <span class="mf">2</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nx">Planet</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">gravForce</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">mass</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">gravAccel</span><span class="p">()</span> <span class="o">*</span> <span class="nx">mass</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nx">Planet</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">escapeVelocity</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">(</span><span class="mf">2</span> <span class="o">*</span> <span class="k">this</span><span class="p">.</span><span class="nx">gravAccel</span><span class="p">()</span> <span class="o">*</span> <span class="k">this</span><span class="p">.</span><span class="nx">radius</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">earth</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Planet</span><span class="p">(</span><span class="mf">5.972e24</span><span class="p">,</span> <span class="mf">6371e3</span><span class="p">,</span> <span class="s2">"Earth"</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">moon</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Planet</span><span class="p">(</span><span class="mf">7.34767309e22</span><span class="p">,</span> <span class="mf">1737.1e3</span><span class="p">,</span> <span class="s2">"Moon"</span><span class="p">);</span>
+
+<span class="nx">earth</span><span class="p">.</span><span class="nx">moon</span> <span class="o">=</span> <span class="nx">moon</span><span class="p">;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">earth</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">Failed to start the Kernel. 
+</span>
+<span class="ansi-red-intense-fg ansi-bold">View Jupyter &lt;a href='command:jupyter.viewOutput'&gt;log&lt;/a&gt; for further details.</span></pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
