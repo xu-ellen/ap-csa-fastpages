@@ -4,21 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>AWS and Docker | Ellen’s blog</title>
+<title>Planets | Ellen’s blog</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="AWS and Docker" />
+<meta property="og:title" content="Planets" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Running Spring portfolio using AWS and Docker." />
-<meta property="og:description" content="Running Spring portfolio using AWS and Docker." />
-<link rel="canonical" href="https://xu-ellen.github.io/ap-csa-fastpages/markdown/2022/09/08/aws-docker.html" />
-<meta property="og:url" content="https://xu-ellen.github.io/ap-csa-fastpages/markdown/2022/09/08/aws-docker.html" />
+<meta name="description" content="An AP CSA blog." />
+<meta property="og:description" content="An AP CSA blog." />
+<link rel="canonical" href="https://xu-ellen.github.io/ap-csa-fastpages/planets/" />
+<meta property="og:url" content="https://xu-ellen.github.io/ap-csa-fastpages/planets/" />
 <meta property="og:site_name" content="Ellen’s blog" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-09-08T00:00:00-05:00" />
+<meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="AWS and Docker" />
+<meta property="twitter:title" content="Planets" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-08T00:00:00-05:00","datePublished":"2022-09-08T00:00:00-05:00","description":"Running Spring portfolio using AWS and Docker.","headline":"AWS and Docker","mainEntityOfPage":{"@type":"WebPage","@id":"https://xu-ellen.github.io/ap-csa-fastpages/markdown/2022/09/08/aws-docker.html"},"url":"https://xu-ellen.github.io/ap-csa-fastpages/markdown/2022/09/08/aws-docker.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"An AP CSA blog.","headline":"Planets","url":"https://xu-ellen.github.io/ap-csa-fastpages/planets/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/ap-csa-fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://xu-ellen.github.io/ap-csa-fastpages/feed.xml" title="Ellen's blog" /><link rel="shortcut icon" type="image/x-icon" href="/ap-csa-fastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -70,48 +69,128 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+        <!DOCTYPE html>
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">AWS and Docker</h1><p class="page-description">Running Spring portfolio using AWS and Docker.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-08T00:00:00-05:00" itemprop="datePublished">
-        Sep 8, 2022
-      </time>
-       • <span class="read-time" title="Estimated read time">
+<html lang="en">
+
+<head>  
+    <meta charset="utf-8">  
+    <title>  
+        Planets  
+    </title>
+</head>
+
+<!-- Create text inputs for q1, q2, r -->
+
+<body>
+
+    <h1>
+        Planets
+    </h1>
+
+<!-- Create div for planets -->
+
+    <div id="planets">
+
+    </div>
+
+</body>
+
+<script>
     
-    
-      1 min read
-    
-</span></p>
+    function Planet(mass, radius, name) {
+        this.mass = mass;
+        this.radius = radius;
+        this.name = name;
+        this.moon = null;
+    }
 
-    
-      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
-      
-        <a class="category-tags-link" href="/ap-csa-fastpages/categories/#markdown">markdown</a>
-        
-      
-      </p>
-    
+    Planet.prototype.density = function() {
+        return this.mass / (4 / 3 * Math.PI * this.radius ** 3);
+    }
 
-    </header>
+    Planet.prototype.volume = function() {
+        return 4 / 3 * Math.PI * this.radius ** 3;
+    }
 
-  <div class="post-content e-content" itemprop="articleBody">
-    <h3 id="screenshots-verifying-dockeraws-deployment">Screenshots verifying Docker/AWS deployment</h3>
+    Planet.prototype.surfaceArea = function() {
+        return 4 * Math.PI * this.radius ** 2;
+    }
 
-<p>Checking the Docker image</p>
+    Planet.prototype.gravAccel = function() {
+        return 6.674e-11 * this.mass / this.radius ** 2;
+    }
 
-<p><img src="https://user-images.githubusercontent.com/56745453/189200383-ff230aa3-dc83-4d3d-86aa-3a4ce5a0fb1c.png" alt="image" /></p>
+    Planet.prototype.gravForce = function(mass) {
+        return this.gravAccel() * mass;
+    }
 
-<p>Checking curl localhost:8085</p>
+    Planet.prototype.escapeVelocity = function() {
+        return Math.sqrt(2 * this.gravAccel() * this.radius);
+    }
 
-<p><img src="https://user-images.githubusercontent.com/56745453/189699363-a7e78f70-f15b-4b91-8dbd-fd0adfc37012.png" alt="nginx" /></p>
+    var earth = new Planet(5.972e24, 6371e3, "Earth");
+    var moon = new Planet(7.34767309e22, 1737.1e3, "Moon");
 
-<p>Checking deployment</p>
+    earth.moon = moon;
 
-<p><img src="https://user-images.githubusercontent.com/56745453/189699270-43554d9f-4af7-4fad-9616-c16ada1f0254.png" alt="image" /></p>
+    // console.log(earth);
 
-  </div><a class="u-url" href="/ap-csa-fastpages/markdown/2022/09/08/aws-docker.html" hidden></a>
-</article>
+    var planets = [
+        new Planet(5.972e24, 6371e3, "Earth"),
+        new Planet(7.34767309e22, 1737.1e3, "Moon"),
+        new Planet(1.989e30, 6.957e8, "Sun"),
+        new Planet(1.898e27, 3.39e6, "Mercury"),
+        new Planet(5.683e26, 6.0518e6, "Venus"),
+        new Planet(6.39e23, 3.3895e6, "Mars"),
+        new Planet(1.898e27, 6.0518e7, "Jupiter"),
+        new Planet(5.683e26, 3.3895e7, "Saturn"),
+        new Planet(6.39e23, 6.0518e7, "Uranus"),
+        new Planet(1.898e27, 3.3895e7, "Neptune"),
+        new Planet(5.683e26, 6.0518e7, "Pluto"),
+    ];
 
+    function System(planets) {
+        this.planets = planets;
+        this.planets.forEach(function(planet) {
+            this[planet.name] = planet;
+        }, this);
+
+        this.moons = planets.filter(function(planet) {
+            return planet.moon;
+        });
+
+        this.moons.forEach(function(moon) {
+            this[moon.name] = moon;
+        }, this);
+
+    }
+
+    solar = new System(planets);
+
+    solar.prototype._toHtml = function() {
+        var html = "<table>";
+        html += "<tr><th>Planet</th><th>Mass</th><th>Radius</th><th>Density</th><th>Volume</th><th>Surface Area</th><th>Grav. Accel.</th><th>Escape Velocity</th></tr>";
+        this.planets.forEach(function(planet) {
+            html += "<tr>";
+            html += "<td>" + planet.name + "</td>";
+            html += "<td>" + planet.mass + "</td>";
+            html += "<td>" + planet.radius + "</td>";
+            html += "<td>" + planet.density() + "</td>";
+            html += "<td>" + planet.volume() + "</td>";
+            html += "<td>" + planet.surfaceArea() + "</td>";
+            html += "<td>" + planet.gravAccel() + "</td>";
+            html += "<td>" + planet.escapeVelocity() + "</td>";
+            html += "</tr>";
+        });
+        html += "</table>";
+        return html;
+    }
+
+    // print to div planets
+    document.getElementById("planets").innerHTML = solar._toHtml();
+
+</script>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/ap-csa-fastpages/"></data>
