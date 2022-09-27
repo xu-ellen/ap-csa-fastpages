@@ -37,8 +37,25 @@ search_exclude: true
 
     </div>
 
-        <input type="submit" value="Calculate"/>
+        <input type="submit" value="Calculate" onclick="calculate()"/>
 
     </div>
 
 </body>
+
+<script>
+    function calculate() {
+        console.log("Calculate button clicked") // Test to see if the button works
+
+        // Get the values from the text inputs
+        var q1 = document.getElementById("q1").value;
+        var q2 = document.getElementById("q2").value;
+        var r = document.getElementById("r").value;
+
+        // Calculate the result
+        var result = (q1 * q2) / (r * r);
+
+        // Display the result
+        alert("The result is " + result);
+    }
+</script>
