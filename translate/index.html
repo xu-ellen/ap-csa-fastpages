@@ -122,6 +122,7 @@ window.onload = wrap_img;
             <a class="dropdown-item" href="#" tolang="es">Spanish</a>
             <a class="dropdown-item" href="#" tolang="de">German</a>
         </div>
+        Current language: <p id="language">English</p>
     </div>
 
     <div>
@@ -134,8 +135,7 @@ window.onload = wrap_img;
     </div>
 
     <div>
-        
-            <p id="result"></p>
+        <p id="result"></p>
     </div>
 
 </body>
@@ -160,6 +160,13 @@ window.onload = wrap_img;
         }
     }
 
+    // If the user clicks on a language, change the current language
+    $(".dropdown-item").click(function() {
+        var language = $(this).text();
+        $("#language").text(language);
+    });
+
+    // Translate the text
     const settings = {
         "async": true,
         "crossDomain": true,
@@ -187,8 +194,6 @@ window.onload = wrap_img;
             var translatedText = response.data.translations[0].translatedText;
         });
 
-        // Display the result
-        // alert("The result is " + result);
         document.getElementById("result").innerHTML = "Translation: " + translatedText;
     }
 </script>
