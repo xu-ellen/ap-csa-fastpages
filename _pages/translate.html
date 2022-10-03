@@ -58,6 +58,7 @@ search_exclude: true
             <a class="dropdown-item" href="#" tolang="es">Spanish</a>
             <a class="dropdown-item" href="#" tolang="de">German</a>
         </div>
+        Current language: <p id="language">English</p>
     </div>
 
     <div>
@@ -70,8 +71,7 @@ search_exclude: true
     </div>
 
     <div>
-        
-            <p id="result"></p>
+        <p id="result"></p>
     </div>
 
 </body>
@@ -96,6 +96,13 @@ search_exclude: true
         }
     }
 
+    // If the user clicks on a language, change the current language
+    $(".dropdown-item").click(function() {
+        var language = $(this).text();
+        $("#language").text(language);
+    });
+
+    // Translate the text
     const settings = {
         "async": true,
         "crossDomain": true,
@@ -123,8 +130,6 @@ search_exclude: true
             var translatedText = response.data.translations[0].translatedText;
         });
 
-        // Display the result
-        // alert("The result is " + result);
         document.getElementById("result").innerHTML = "Translation: " + translatedText;
     }
 </script>
