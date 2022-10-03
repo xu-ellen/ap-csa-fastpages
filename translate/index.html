@@ -86,44 +86,82 @@ window.onload = wrap_img;
         Translate
     </h1>
 
-    <!-- <div> -->
+    <div class="dropdown">
+        <button onclick="dropdown()" class="dropbtn">Languages</button>
+        <div id="langDropdown" class="dropdown-content">
+            <a class="dropdown-item" href="#" tolang="en">English (default)</a>
+            <a class="dropdown-item" href="#" tolang="it">Italian</a>
+            <a class="dropdown-item" href="#" tolang="es">Spanish</a>
+            <a class="dropdown-item" href="#" tolang="de">German</a>
+        </div>
+    </div>
 
-        <label for="input">Text:</label>
+    <div>
+        <label for="input">Text: </label>
         <input type="text" id="input" name="input" required minlength="4" maxlength="8" size="10">
+    </div>
 
-    <!-- </div> -->
-
-<!-- Create a button to calculate the result -->
-
-    <!-- </div> -->
-
+    <div>
         <input type="submit" value="Translate" onclick="translate()"/>
+    </div>
 
-    <!-- </div> -->
-
-<!-- Create div for output -->
-    
-        <!-- <div> -->
-    
+    <div>
+        
             <p id="result"></p>
-    
-        <!-- </div> -->
+    </div>
 
 </body>
 
 <script>
+
+    function myFunction() {
+        document.getElementById("langDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+
+    const settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://google-translate1.p.rapidapi.com/language/translate/v2",
+        "method": "POST",
+        "headers": {
+            "content-type": "application/x-www-form-urlencoded",
+            "Accept-Encoding": "application/gzip",
+            "X-RapidAPI-Key": "af7e196e18msh4d482e5496c0c2ap1e17f5jsna90ba7f9f0d8",
+            "X-RapidAPI-Host": "google-translate1.p.rapidapi.com"
+        },
+        "data": {
+            "q": document.getElementById("input").value,
+            "target": $(".dropdown-item").attr("tolang"),
+            "source": "en"
+        }
+    };
+
     function translate() {
         console.log("Translate button clicked") // Test to see if the button works
 
-        // Get the values from the text inputs
-        var input = document.getElementById("input").value;
-
         // Calculate the result
-        var result = k * (q1 * q2) / (r * r);
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+            var translatedText = response.data.translations[0].translatedText;
+        });
 
         // Display the result
         // alert("The result is " + result);
-        document.getElementById("result").innerHTML = "The result is " + result;
+        document.getElementById("result").innerHTML = "Translation: " + translatedText;
     }
 </script>
       </div>
