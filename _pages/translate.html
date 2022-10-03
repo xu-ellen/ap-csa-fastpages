@@ -67,7 +67,7 @@ search_exclude: true
     </div>
 
     <div>
-        <input type="submit" value="Translate" onclick="translate()"/>
+        <input type="submit" value="Translate" onclick="fetchTranslate()"/>
     </div>
 
     <div>
@@ -116,12 +116,12 @@ search_exclude: true
         },
         "data": {
             "q": document.getElementById("input").value,
-            "target": $(".dropdown-item").attr("tolang"),
+            "target": document.getElementById("language").value,
             "source": "en"
         }
     };
 
-    function translate() {
+    function fetchTranslate() {
         console.log("Translate button clicked") // Test to see if the button works
 
         // Calculate the result
