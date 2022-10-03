@@ -1,0 +1,64 @@
+---
+layout: default
+permalink: /translate/
+title: Translate
+search_exclude: true
+---
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>  
+    <meta charset="utf-8">  
+    <title>  
+        Translate  
+    </title>
+</head>
+
+<body>
+
+    <h1>
+        Translate
+    </h1>
+
+    <!-- <div> -->
+
+        <label for="input">Text:</label>
+        <input type="text" id="input" name="input" required minlength="4" maxlength="8" size="10">
+
+    <!-- </div> -->
+
+<!-- Create a button to calculate the result -->
+
+    <!-- </div> -->
+
+        <input type="submit" value="Translate" onclick="translate()"/>
+
+    <!-- </div> -->
+
+<!-- Create div for output -->
+    
+        <!-- <div> -->
+    
+            <p id="result"></p>
+    
+        <!-- </div> -->
+
+</body>
+
+<script>
+    function translate() {
+        console.log("Translate button clicked") // Test to see if the button works
+
+        // Get the values from the text inputs
+        var input = document.getElementById("input").value;
+
+        // Calculate the result
+        var result = k * (q1 * q2) / (r * r);
+
+        // Display the result
+        // alert("The result is " + result);
+        document.getElementById("result").innerHTML = "The result is " + result;
+    }
+</script>
