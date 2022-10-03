@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -289,6 +289,51 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.net.URI</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.http.HttpClient</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.http.HttpRequest</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.http.HttpResponse</span><span class="p">;</span>
+
+<span class="n">HttpRequest</span> <span class="n">request</span> <span class="o">=</span> <span class="n">HttpRequest</span><span class="p">.</span><span class="na">newBuilder</span><span class="p">()</span>
+		<span class="p">.</span><span class="na">uri</span><span class="p">(</span><span class="n">URI</span><span class="p">.</span><span class="na">create</span><span class="p">(</span><span class="s">"https://google-translate1.p.rapidapi.com/language/translate/v2"</span><span class="p">))</span>
+		<span class="p">.</span><span class="na">header</span><span class="p">(</span><span class="s">"content-type"</span><span class="p">,</span> <span class="s">"application/x-www-form-urlencoded"</span><span class="p">)</span>
+		<span class="p">.</span><span class="na">header</span><span class="p">(</span><span class="s">"Accept-Encoding"</span><span class="p">,</span> <span class="s">"application/gzip"</span><span class="p">)</span>
+		<span class="p">.</span><span class="na">header</span><span class="p">(</span><span class="s">"X-RapidAPI-Key"</span><span class="p">,</span> <span class="s">"af7e196e18msh4d482e5496c0c2ap1e17f5jsna90ba7f9f0d8"</span><span class="p">)</span>
+		<span class="p">.</span><span class="na">header</span><span class="p">(</span><span class="s">"X-RapidAPI-Host"</span><span class="p">,</span> <span class="s">"google-translate1.p.rapidapi.com"</span><span class="p">)</span>
+		<span class="p">.</span><span class="na">method</span><span class="p">(</span><span class="s">"POST"</span><span class="p">,</span> <span class="n">HttpRequest</span><span class="p">.</span><span class="na">BodyPublishers</span><span class="p">.</span><span class="na">ofString</span><span class="p">(</span><span class="s">"q=Hello%2C%20world!&amp;target=es&amp;source=en"</span><span class="p">))</span>
+		<span class="p">.</span><span class="na">build</span><span class="p">();</span>
+<span class="n">HttpResponse</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">response</span> <span class="o">=</span> <span class="n">HttpClient</span><span class="p">.</span><span class="na">newHttpClient</span><span class="p">().</span><span class="na">send</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">HttpResponse</span><span class="p">.</span><span class="na">BodyHandlers</span><span class="p">.</span><span class="na">ofString</span><span class="p">());</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="na">body</span><span class="p">());</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{"data":{"translations":[{"translatedText":"¡Hola Mundo!"}]}}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
