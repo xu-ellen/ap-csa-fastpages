@@ -72,6 +72,7 @@ search_exclude: true
     </div>
 
     <div>
+        <label for="output">Translation: </label>
         <p id="result"></p>
     </div>
 
@@ -111,26 +112,42 @@ search_exclude: true
         "method": "POST",
         "headers": {
             "content-type": "application/x-www-form-urlencoded",
-            "Accept-Encoding": "application/gzip",
+            // "Accept-Encoding": "application/gzip",
             "X-RapidAPI-Key": "af7e196e18msh4d482e5496c0c2ap1e17f5jsna90ba7f9f0d8",
             "X-RapidAPI-Host": "google-translate1.p.rapidapi.com"
         },
         "data": {
-            "q": document.getElementById("input").value,
-            "target": document.getElementById("language").value,
-            "source": "en"
+            "q": "",
+            "source": "en",
+            "target": ""
         }
     };
 
     function fetchTranslate() {
         console.log("Translate button clicked") // Test to see if the button works
 
-        // Calculate the result
+        // Set the data to the input
+        settings.data.q = document.getElementById("input").value;
+        language = document.getElementById("language").innerHTML;
+
+        // Set the target language
+
+        language_dict = {
+            "English": "en",
+            "Italian": "it",
+            "Spanish": "es",
+            "German": "de"
+        }
+
+        settings.data.target = language_dict[language];
+
+        console.log(settings.data.q); // Test to see if the input is correct
+        console.log(settings.data.target); // Test to see if the language is correct
+
+        // Send the request
         $.ajax(settings).done(function (response) {
             console.log(response);
-            var translatedText = response.data.translations[0].translatedText;
+            document.getElementById("result").innerHTML = response.data.translations[0].translatedText;
         });
-
-        document.getElementById("result").innerHTML = "Translation: " + translatedText;
     }
 </script>
