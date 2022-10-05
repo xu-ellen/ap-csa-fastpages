@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Oct  3 09:50:01 2022
+# Make data base, printed on Wed Oct  5 10:59:14 2022
 
 # Variables
 
@@ -53,7 +53,7 @@ XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-a08e12a1-2870-49f5-98f1-6faa436af33e.sock
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-80a1e9d9-7eac-4d88-a747-adc3b1e8562e.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -65,13 +65,15 @@ DISPLAY = :0
 # environment
 CONDA_EXE = /home/ellen/miniconda3/bin/conda
 # environment
+WSL2_GUI_APPS_ENABLED = 1
+# environment
 PWD = /mnt/c/Users/ellen/Documents/code/ap-csa/ap-csa-fastpages
 # environment
 CODE = /mnt/c/Users/ellen/Documents/code/
 # default
 .LOADED := 
 # environment
-WSL_INTEROP = /run/WSL/14_interop
+WSL_INTEROP = /run/WSL/295_interop
 # environment
 PULSE_SERVER = /mnt/wslg/PulseServer
 # environment
@@ -165,7 +167,7 @@ WSL_DISTRO_NAME = Ubuntu
 # environment
 _CE_CONDA = 
 # variable set hash-table stats:
-# Load=76/1024=7%, Rehash=0, Collisions=5/101=5%
+# Load=77/1024=8%, Rehash=0, Collisions=5/102=5%
 
 # Pattern-specific Variable Values
 
@@ -173,7 +175,7 @@ _CE_CONDA =
 
 # Directories
 
-# . (device 63, inode 2251799814987370): 32 files, no impossibilities.
+# . (device 69, inode 2251799814987370): 32 files, no impossibilities.
 
 # 32 files, no impossibilities in 1 directories.
 
@@ -272,13 +274,13 @@ help:
 .DEFAULT:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
+ 
 #  File has not been updated.
 
 bash-jekyll: .FORCE
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 #  recipe to execute (from 'Makefile', line 46):
 	docker-compose exec jekyll /bin/bash
 
@@ -310,6 +312,6 @@ convert: .FORCE
 # strcache performance: lookups = 75 / hit rate = 34%
 # hash-table stats:
 # Load=49/8192=1%, Rehash=0, Collisions=1/75=1%
-# Finished Make data base on Mon Oct  3 09:50:01 2022
+# Finished Make data base on Wed Oct  5 10:59:14 2022
 
  
