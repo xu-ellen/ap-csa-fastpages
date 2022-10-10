@@ -1,0 +1,136 @@
+---
+layout: default
+permalink: /physics/
+title: Physics
+search_exclude: true
+---
+
+<!DOCTYPE html>
+
+<html lang="en">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+
+<head>  
+    <meta charset="utf-8">  
+    <title>  
+        Physics  
+    </title>
+</head>
+
+<style>
+
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: gray;
+    }
+
+    .dropdown-content {
+        display: none;  /* hidden by default */
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {background-color: #ddd;}
+
+    .show {display:block;}  /* show when user clicks dropdown */
+</style>
+
+<body>
+
+    <h1>
+        Physics
+    </h1>
+
+    <div class="dropdown">
+        <button onclick="dropdown()" class="dropbtn">Levels</button>
+        <div id="levelDropdown" class="dropdown-content">
+            <a class="dropdown-item" href="#">Advanced</a>
+            <a class="dropdown-item" href="#">Intermediate</a>
+            <a class="dropdown-item" href="#">Basic (default)</a>
+        </div>
+        Current level: <p id="level">Basic</p>
+    </div>
+
+    <div>
+        <input type="submit" value="Physics" onclick="fetchPhysics()"/>
+    </div>
+
+    <div>
+        <label for="output">Definitions: </label>
+        <p id="result"></p>
+    </div>
+
+</body>
+
+<script>
+
+    function dropdown() {
+        document.getElementById("levelDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+
+    // If the user clicks on a level, change the current level
+    $(".dropdown-item").click(function() {
+        var level = $(this).text();
+        $("#level").text(level);
+    });
+
+    // Return phsics definition
+    const settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "",  // change url based on level
+        "method": "GET",
+        "headers": {
+            "X-RapidAPI-Key": "af7e196e18msh4d482e5496c0c2ap1e17f5jsna90ba7f9f0d8",
+            "X-RapidAPI-Host": "physitionary.p.rapidapi.com"
+        }
+    };
+
+    $.ajax(settings).done(function (response) {
+        console.log(response);
+    });
+
+    function fetchPhysics() {
+        console.log("Physics button clicked") // Test to see if the button works
+
+        var level = $("#level").text();
+        console.log(level); // Test to see if the level is correct
+
+        if (level == "Basic") {
+            settings.url = "https://physitionary.p.rapidapi.com/physics/definitions/basic";
+        } else if (level == "Intermediate") {
+            settings.url = "https://physitionary.p.rapidapi.com/physics/definitions/intermediate";
+        } else if (level == "Advanced") {
+            settings.url = "https://physitionary.p.rapidapi.com/physics/definitions/advanced";
+        }
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+            $("#result").text(response);
+        });
+    }
+</script>
