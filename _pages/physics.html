@@ -57,7 +57,7 @@ search_exclude: true
         <div id="levelDropdown" class="dropdown-content">
             <a class="dropdown-item" href="#">Advanced</a>
             <a class="dropdown-item" href="#">Intermediate</a>
-            <a class="dropdown-item" href="#">Basic (default)</a>
+            <a class="dropdown-item" href="#">Basic</a>
         </div>
         Current level: <p id="level">Basic</p>
     </div>
@@ -122,11 +122,11 @@ search_exclude: true
         console.log(level); // Test to see if the level is correct
 
         if (level == "Basic") {
-            settings.url = "https://physitionary.p.rapidapi.com/physics/definitions/basic";
+            settings.url = "https://physitionary.p.rapidapi.com/basic";
         } else if (level == "Intermediate") {
-            settings.url = "https://physitionary.p.rapidapi.com/physics/definitions/intermediate";
+            settings.url = "https://physitionary.p.rapidapi.com/intermediate";
         } else if (level == "Advanced") {
-            settings.url = "https://physitionary.p.rapidapi.com/physics/definitions/advanced";
+            settings.url = "https://physitionary.p.rapidapi.com/advanced";
         }
 
         $.ajax(settings).done(function (response) {
