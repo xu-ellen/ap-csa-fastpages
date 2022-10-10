@@ -131,8 +131,16 @@ window.onload = wrap_img;
     </div>
 
     <div>
-        <label for="output">Definitions: </label>
-        <p id="result"></p>
+        <!-- Create table for terms, definitions, examples -->
+
+        <table id="result" style="width:100%">
+            <tr>
+                <th>Term</th>
+                <th>Definition</th>
+                <th>Example</th>
+            </tr>
+        </table>
+
     </div>
 
 </body>
@@ -193,9 +201,27 @@ window.onload = wrap_img;
             settings.url = "https://physitionary.p.rapidapi.com/advanced";
         }
 
+        // print term, definition, examples in table
+
         $.ajax(settings).done(function (response) {
             console.log(response);
-            $("#result").text(response);
+
+            // get each item in array
+            for (var i = 0; i < response.length; i++) {
+                var term = response[i].term;
+                var definition = response[i].definition;
+                var example = response[i].example;
+
+                // add each item to table
+                var table = document.getElementById("result");
+                var row = table.insertRow(i+1);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+                cell1.innerHTML = term;
+                cell2.innerHTML = definition;
+                cell3.innerHTML = example;
+            }
         });
     }
 </script>
