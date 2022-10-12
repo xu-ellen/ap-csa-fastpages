@@ -209,8 +209,8 @@ window.onload = wrap_img;
             // get each item in array
             for (var i = 0; i < response.length; i++) {
                 var term = response[i].term;
-                var definition = response[i].definition;
-                var example = response[i].example;
+                var definition = response[i].results[0].definition;
+                var example = response[i].results[0].examples[0];
 
                 // add each item to table
                 var table = document.getElementById("result");
