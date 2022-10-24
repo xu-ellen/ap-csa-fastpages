@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Oct 20 09:50:49 2022
+# Make data base, printed on Sun Oct 23 20:29:50 2022
 
 # Variables
 
@@ -17,7 +17,7 @@ make: *** No rule to make target 'all'.  Stop.
 # automatic
 ?F = $(notdir $?)
 # environment
-WSLENV = VSCODE_WSL_EXT_LOCATION/up
+WSLENV = ELECTRON_RUN_AS_NODE/w:
 # default
 .SHELLFLAGS := -c
 # automatic
@@ -33,7 +33,7 @@ SHELL = /bin/sh
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
 # environment
-_ = /home/ellen/.vscode-server/bin/d045a5eda657f4d7b676dedbfa7aab8207f8a075/node
+_ = /mnt/c/Users/ellen/AppData/Local/Programs/Microsoft VS Code/bin/code
 # environment
 WALLABY_PRODUCTION = true
 # makefile (from 'Makefile', line 1)
@@ -45,7 +45,7 @@ VSCODE_CWD = /mnt/c/Users/ellen/AppData/Local/Programs/Microsoft VS Code
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/ellen/.vscode-server/bin/d045a5eda657f4d7b676dedbfa7aab8207f8a075/bin/remote-cli:/home/ellen/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/VMware/VMware Player/bin/:/mnt/c/Users/ellen/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/ellen/AppData/Local/Programs/Python/Python310/:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/MinGW/bin:/mnt/c/Program Files (x86)/Vim/vim82:/mnt/c/Program Files/nodejs/:/mnt/c/Users/ellen/AppData/Local/Programs/Python/Python310/Lib/site-packages/pip:/mnt/c/sqlite/:/mnt/c/Users/ellen/anaconda3/Scripts:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/ellen/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/ellen/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/ellen/.dotnet/tools:/mnt/c/Users/ellen/AppData/Local/Programs/Hyper/resources/bin:/mnt/c/Users/ellen/AppData/Roaming/npm:/mnt/c/Users/ellen/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/ellen/AppData/Local/Programs/Julia-1.7.2/bin:/home/ellen/.poetry/bin
+PATH = /home/ellen/.vscode-server/bin/d045a5eda657f4d7b676dedbfa7aab8207f8a075/bin/remote-cli:/home/ellen/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_0.70.0.0_x64__8wekyb3d8bbwe:/mnt/c/Program Files (x86)/VMware/VMware Player/bin/:/mnt/c/Users/ellen/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/ellen/AppData/Local/Programs/Python/Python310/:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/MinGW/bin:/mnt/c/Program Files (x86)/Vim/vim82:/mnt/c/Program Files/nodejs/:/mnt/c/Users/ellen/AppData/Local/Programs/Python/Python310/Lib/site-packages/pip:/mnt/c/sqlite/:/mnt/c/Users/ellen/anaconda3/Scripts:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/ellen/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/ellen/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/ellen/.dotnet/tools:/mnt/c/Users/ellen/AppData/Local/Programs/Hyper/resources/bin:/mnt/c/Users/ellen/AppData/Roaming/npm:/mnt/c/Users/ellen/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/ellen/AppData/Local/Programs/Julia-1.7.2/bin:/home/ellen/.poetry/bin
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
@@ -53,7 +53,7 @@ XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-eef2cffd-2d7b-4573-87e9-2b6a542f62a7.sock
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-ac79e7e4-36ce-4e9a-b791-3b338f27b031.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -73,7 +73,7 @@ CODE = /mnt/c/Users/ellen/Documents/code/
 # default
 .LOADED := 
 # environment
-WSL_INTEROP = /run/WSL/11_interop
+WSL_INTEROP = /run/WSL/10304_interop
 # environment
 PULSE_SERVER = /mnt/wslg/PulseServer
 # environment
@@ -99,7 +99,7 @@ MAKECMDGOALS := all
 # environment
 CONDA_SHLVL = 0
 # environment
-SHLVL = 0
+SHLVL = 1
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -107,7 +107,7 @@ USER = ellen
 # makefile
 .DEFAULT_GOAL := help
 # environment
-NAME = ex
+NAME = Code
 # environment
 LESS = -R
 # automatic
@@ -274,8 +274,8 @@ help:
 .DEFAULT:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
- 
 #  File has not been updated.
+ 
 
 bash-jekyll: .FORCE
 #  Implicit rule search has not been done.
@@ -312,6 +312,6 @@ convert: .FORCE
 # strcache performance: lookups = 75 / hit rate = 34%
 # hash-table stats:
 # Load=49/8192=1%, Rehash=0, Collisions=1/75=1%
-# Finished Make data base on Thu Oct 20 09:50:49 2022
+# Finished Make data base on Sun Oct 23 20:29:50 2022
 
  
