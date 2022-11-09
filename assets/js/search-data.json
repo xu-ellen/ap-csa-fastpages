@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "2014 MCQ",
-            "content": "Score . 26/40 . Test Corrections .",
+            "content": "Score . 26/40 . Test Corrections . Reflection . Learned that .substring starts at 0, not 1 | Review DeMorgan’s Law: !(p&amp;&amp;q) = !p |   | !q | . | .",
             "url": "https://xu-ellen.github.io/ap-csa-fastpages/markdown/2022/11/09/2014-mcq.html",
             "relUrl": "/markdown/2022/11/09/2014-mcq.html",
             "date": " • Nov 9, 2022"
