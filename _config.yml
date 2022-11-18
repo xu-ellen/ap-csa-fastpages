@@ -39,8 +39,8 @@ baseurl: "/ap-csa-fastpages" # the subpath of your site, e.g. "/blog".
 # Github and twitter are optional:
 minima:
   social_links:
-    twitter: EllenXu_
-    github: xu-ellen
+    - { platform: github,  user_url: "https://github.com/xu-ellen" }
+    - { platform: twitter, user_url: "https://twitter.com/EllenXu_" }
 
 # Set this to true to get LaTeX math equation support
 use_math: 
