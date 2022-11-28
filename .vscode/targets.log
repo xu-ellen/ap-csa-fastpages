@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Nov 18 01:53:52 2022
+# Make data base, printed on Sun Nov 27 19:30:21 2022
 
 # Variables
 
@@ -34,8 +34,6 @@ SHELL = /bin/sh
 VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
 # environment
 _ = /home/ellen/.vscode-server/bin/6261075646f055b99068d3688932416f2346dd3b/node
-# environment
-WALLABY_PRODUCTION = true
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # 'override' directive
@@ -45,7 +43,7 @@ VSCODE_CWD = /mnt/c/Users/ellen/AppData/Local/Programs/Microsoft VS Code
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/ellen/.vscode-server/bin/6261075646f055b99068d3688932416f2346dd3b/bin/remote-cli:/home/ellen/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/VMware/VMware Player/bin/:/mnt/c/Users/ellen/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/ellen/AppData/Local/Programs/Python/Python310/:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/MinGW/bin:/mnt/c/Program Files (x86)/Vim/vim82:/mnt/c/Program Files/nodejs/:/mnt/c/Users/ellen/AppData/Local/Programs/Python/Python310/Lib/site-packages/pip:/mnt/c/sqlite/:/mnt/c/Users/ellen/anaconda3/Scripts:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/ellen/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/ellen/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/ellen/.dotnet/tools:/mnt/c/Users/ellen/AppData/Local/Programs/Hyper/resources/bin:/mnt/c/Users/ellen/AppData/Roaming/npm:/mnt/c/Users/ellen/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/ellen/AppData/Local/Programs/Julia-1.7.2/bin:/home/ellen/.poetry/bin
+PATH = /home/ellen/.vscode-server/bin/6261075646f055b99068d3688932416f2346dd3b/bin/remote-cli:/home/ellen/miniconda3/condabin:/home/ellen/bin:/home/ellen/.local/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/VMware/VMware Player/bin/:/mnt/c/Users/ellen/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/ellen/AppData/Local/Programs/Python/Python310/:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/MinGW/bin:/mnt/c/Program Files (x86)/Vim/vim82:/mnt/c/Program Files/nodejs/:/mnt/c/Users/ellen/AppData/Local/Programs/Python/Python310/Lib/site-packages/pip:/mnt/c/sqlite/:/mnt/c/Users/ellen/anaconda3/Scripts:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/ellen/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/ellen/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/ellen/.dotnet/tools:/mnt/c/Users/ellen/AppData/Local/Programs/Hyper/resources/bin:/mnt/c/Users/ellen/AppData/Roaming/npm:/mnt/c/Users/ellen/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/ellen/AppData/Local/Programs/Julia-1.7.2/bin:/home/ellen/.poetry/bin
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
@@ -53,7 +51,7 @@ XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-e5d924c9-6a0a-46d7-a884-6ef321f9b5b9.sock
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-5aced8db-5f75-4ef5-a771-99d642f5705e.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -73,7 +71,7 @@ CODE = /mnt/c/Users/ellen/Documents/code/
 # default
 .LOADED := 
 # environment
-WSL_INTEROP = /run/WSL/13980_interop
+WSL_INTEROP = /run/WSL/16961_interop
 # environment
 PULSE_SERVER = /mnt/wslg/PulseServer
 # environment
@@ -112,6 +110,8 @@ NAME = ex
 LESS = -R
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
+# environment
+BOOKS = /mnt/c/Users/ellen/Documents/books/
 # environment
 VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/ellen/.vscode/extensions/ms-vscode-remote.remote-wsl-0.72.0
 # default
@@ -276,11 +276,11 @@ help:
 #  Modification time never checked.
 #  File has not been updated.
 
+ 
 bash-jekyll: .FORCE
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 #  recipe to execute (from 'Makefile', line 46):
 	docker-compose exec jekyll /bin/bash
 
@@ -312,6 +312,6 @@ convert: .FORCE
 # strcache performance: lookups = 75 / hit rate = 34%
 # hash-table stats:
 # Load=49/8192=1%, Rehash=0, Collisions=1/75=1%
-# Finished Make data base on Fri Nov 18 01:53:52 2022
+# Finished Make data base on Sun Nov 27 19:30:21 2022
 
  
