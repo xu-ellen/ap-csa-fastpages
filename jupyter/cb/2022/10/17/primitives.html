@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      8 min read
     
 </span></p>
 
@@ -127,7 +127,19 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h2"><a href="#Primitives-types-notes">Primitives types notes </a>
+<li class="toc-entry toc-h2"><a href="#Primitives-types-notes">Primitives types notes </a></li>
+<li class="toc-entry toc-h1"><a href="#Why-to-use-Java?-(1.1)">Why to use Java? (1.1) </a></li>
+<li class="toc-entry toc-h1"><a href="#Basic-Java-(1.1)">Basic Java (1.1) </a></li>
+<li class="toc-entry toc-h1"><a href="#Hack-1.1">Hack 1.1 </a></li>
+<li class="toc-entry toc-h1"><a href="#List-of-Data-Types-(1.2)">List of Data Types (1.2) </a></li>
+<li class="toc-entry toc-h1"><a href="#Hack-1.2">Hack 1.2 </a></li>
+<li class="toc-entry toc-h1"><a href="#Operators-(1.3)">Operators (1.3) </a></li>
+<li class="toc-entry toc-h1"><a href="#Hack-1.3">Hack 1.3 </a></li>
+<li class="toc-entry toc-h1"><a href="#Assignment-operators-(1.4)">Assignment operators (1.4) </a></li>
+<li class="toc-entry toc-h1"><a href="#Hack-1.4">Hack 1.4 </a></li>
+<li class="toc-entry toc-h1"><a href="#Casting-and-Ranges-(1.5)">Casting and Ranges (1.5) </a></li>
+<li class="toc-entry toc-h1"><a href="#Hack-1.5">Hack 1.5 </a></li>
+<li class="toc-entry toc-h1"><a href="#Code-Example!">Code Example! </a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#Grade-Calculator">Grade Calculator </a></li>
 </ul>
@@ -169,6 +181,686 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Why-to-use-Java?-(1.1)">
+<a class="anchor" href="#Why-to-use-Java?-(1.1)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why to use Java? (1.1)<a class="anchor-link" href="#Why-to-use-Java?-(1.1)"> </a>
+</h1>
+<p>Java is an important programming language that is widely used throughout the tech industry and contains many important programmming concepts such as object oriented programming.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Basic-Java-(1.1)">
+<a class="anchor" href="#Basic-Java-(1.1)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Basic Java (1.1)<a class="anchor-link" href="#Basic-Java-(1.1)"> </a>
+</h1>
+<ul>
+<li>All code that runs must be in the main method (shown below)</li>
+<li>To print something, use System.out.print(); and inside the parenthesis put text in quotes (String)<ul>
+<li>To print with a new line, use System.out.println();</li>
+</ul>
+</li>
+<li>To comment your code, use // for single line comments and /**/ for multiple lines (example will be shown below)<ul>
+<li>It is important to describe how and why your code works, however dont describe obvious things</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Example</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Hello World"</span><span class="p">);</span>  
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">" From Team Oops!"</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span> <span class="c1">//done to separate two different lines </span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Welcome to our presentation!"</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"We hope you learn something from it!"</span><span class="p">);</span>
+
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Example</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello World From Team Oops!
+Welcome to our presentation!
+We hope you learn something from it!</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Hack-1.1">
+<a class="anchor" href="#Hack-1.1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 1.1<a class="anchor-link" href="#Hack-1.1"> </a>
+</h1>
+<p>Print your name and your team name in separate lines!</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Printing</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Ellen"</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Team JEHB"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Printing</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Ellen
+Team JEHB
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="List-of-Data-Types-(1.2)">
+<a class="anchor" href="#List-of-Data-Types-(1.2)" aria-hidden="true"><span class="octicon octicon-link"></span></a>List of Data Types (1.2)<a class="anchor-link" href="#List-of-Data-Types-(1.2)"> </a>
+</h1>
+<ul>
+<li>Data types are different categories in which one can store various types of data.</li>
+<li>The main Primitve data types are: <ul>
+<li>Integer (int): used for whole numbers</li>
+<li>Double (double): used for numbers with decimals</li>
+<li>Boolean (boolean): used for true or false conditionals</li>
+</ul>
+</li>
+<li>For Primitive types, variables store actual data instead of reference</li>
+<li>If the variable is declared final, it cannot be edited</li>
+<li>A non Primitive type which is commonly used is String<ul>
+<li>Stores text</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Example</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+
+        <span class="kt">int</span> <span class="n">Herbo</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+        <span class="kt">double</span> <span class="n">gasPrices</span> <span class="o">=</span> <span class="mf">7.99</span><span class="p">;</span>
+        <span class="kd">final</span> <span class="kt">boolean</span> <span class="n">Hot</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Team Oops is hot:"</span><span class="p">;</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Herbo</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">gasPrices</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="n">Hot</span><span class="p">);</span>
+
+        <span class="c1">// Hot = false; cannot assign a value to final variable Hot </span>
+
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Example</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>10
+7.99
+Team Oops is hot:true
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Hack-1.2">
+<a class="anchor" href="#Hack-1.2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 1.2<a class="anchor-link" href="#Hack-1.2"> </a>
+</h1>
+<p>Create variables for your biodata (name, age, underclassmen or not, height in feet)</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Biodata</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Ellen"</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">345</span><span class="p">;</span>
+        <span class="kt">boolean</span> <span class="n">isUnderClass</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+        <span class="kt">double</span> <span class="n">height</span> <span class="o">=</span> <span class="mf">6.11</span><span class="p">;</span>
+
+        <span class="n">String</span> <span class="n">print</span> <span class="o">=</span> <span class="n">String</span><span class="p">.</span><span class="na">format</span><span class="p">(</span><span class="s">"Name: %s \nAge: %d \nIs underclassmen: %b \nHeight: %f"</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">isUnderClass</span><span class="p">,</span> <span class="n">height</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">print</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Biodata</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Name: Ellen 
+Age: 345 
+Is underclassmen: false 
+Height: 6.110000
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Operators-(1.3)">
+<a class="anchor" href="#Operators-(1.3)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Operators (1.3)<a class="anchor-link" href="#Operators-(1.3)"> </a>
+</h1>
+<ul>
+<li>In order to perform mathmatical calculations on integers and doubles, you can use operators</li>
+<li>Main ones are +, -, *, / <ul>
+<li>These are what you expect </li>
+<li>When dividing integers, it always rounds down because output must be an integer</li>
+<li>When dividing by 0, will get the ArithemticException Error</li>
+</ul>
+</li>
+<li>Modulus is %, used to get remainder when two numbers are divided</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Math</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+
+        <span class="kt">int</span> <span class="n">number</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">number2</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+        <span class="kt">double</span> <span class="n">number3</span> <span class="o">=</span> <span class="mf">2.0</span><span class="p">;</span>
+        <span class="kt">double</span> <span class="n">number4</span> <span class="o">=</span> <span class="mf">5.0</span><span class="p">;</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">number</span><span class="o">+</span><span class="n">number2</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">number3</span><span class="o">+</span><span class="n">number4</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">number</span><span class="o">-</span><span class="n">number2</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">number3</span><span class="o">-</span><span class="n">number4</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">number</span> <span class="o">*</span> <span class="n">number2</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">number3</span> <span class="o">*</span> <span class="n">number4</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">number</span><span class="o">/</span><span class="n">number2</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">number3</span><span class="o">/</span><span class="n">number4</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">number4</span> <span class="o">%</span> <span class="n">number3</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">number2</span> <span class="o">%</span> <span class="n">number</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Math</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>7
+7.0
+-3
+-3.0
+10
+10.0
+0
+0.4
+1.0
+1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Hack-1.3">
+<a class="anchor" href="#Hack-1.3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 1.3<a class="anchor-link" href="#Hack-1.3"> </a>
+</h1>
+<ul>
+<li>Compute the remainder of 6 multiplied by 1234124 divided by 11345 minus 890809 plus 90800 (use order of operations) is divided by 980098, and store this in a variable called num (get an exact number as opposed to a whole number)</li>
+<li>Divide num by 100</li>
+<li>Print num</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Num</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">float</span> <span class="n">num</span> <span class="o">=</span> <span class="p">((</span><span class="mi">6</span><span class="o">*</span><span class="mi">1234124</span><span class="p">)</span><span class="o">%</span><span class="mi">11345</span><span class="p">)</span><span class="o">-</span><span class="mi">890809</span><span class="o">+</span><span class="mi">90800</span><span class="p">;</span>
+        <span class="n">num</span> <span class="o">/=</span> <span class="mf">100.0</span><span class="p">;</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Num</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>-7922.05
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Assignment-operators-(1.4)">
+<a class="anchor" href="#Assignment-operators-(1.4)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Assignment operators (1.4)<a class="anchor-link" href="#Assignment-operators-(1.4)"> </a>
+</h1>
+<ul>
+<li>+= adds value of a variabe to another variable and assigns total value to first variable</li>
+<li>-= subtracts value of a variabe to another variable and assigns total value to first variable</li>
+<li>*= multiplies value of a variabe to another variable and assigns total value to first variable</li>
+<li>/= multiplies value of a variabe to another variable and assigns total value to first variable</li>
+<li>%= takes the remainder of a variable with a second variable and assigns remainder to first variable</li>
+<li>++ increments a variable by 1, to incrememt by more change second plus to number which you want to incrememnt by</li>
+<li>-- subracts a variable by 1, to incrememt by more change second plus to number which you want to subtract by</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Hack-1.4">
+<a class="anchor" href="#Hack-1.4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 1.4<a class="anchor-link" href="#Hack-1.4"> </a>
+</h1>
+<ul>
+<li>Create a code which performs mathmatical calculations with assignment operators!</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Operators</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">long</span> <span class="n">num</span> <span class="o">=</span> <span class="mi">23948294</span><span class="p">;</span>
+        <span class="n">num</span> <span class="o">%=</span> <span class="mi">4</span><span class="p">;</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Remainder when divided by 4 is "</span> <span class="o">+</span> <span class="n">num</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Operators</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Remainder when divided by 4 is 2
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Casting-and-Ranges-(1.5)">
+<a class="anchor" href="#Casting-and-Ranges-(1.5)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Casting and Ranges (1.5)<a class="anchor-link" href="#Casting-and-Ranges-(1.5)"> </a>
+</h1>
+<ul>
+<li>Doubles and Integers can be converted to each other using (int) or (double)<ul>
+<li>When converting from doubles to integers, will round down</li>
+</ul>
+</li>
+<li>Integers are 4 bytes of data, can store between Integer.MAX_VALUE and Integer.MIN_VALUE</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Cast</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">double</span> <span class="n">num</span> <span class="o">=</span> <span class="mf">10.5</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">num2</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">numInt</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">num</span><span class="p">;</span>
+        <span class="kt">double</span> <span class="n">num2Double</span> <span class="o">=</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">num2</span><span class="p">;</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num2</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">numInt</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num2Double</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Integer</span><span class="p">.</span><span class="na">MAX_VALUE</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Integer</span><span class="p">.</span><span class="na">MIN_VALUE</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Float</span><span class="p">.</span><span class="na">MAX_VALUE</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Float</span><span class="p">.</span><span class="na">MIN_VALUE</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Double</span><span class="p">.</span><span class="na">MAX_VALUE</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Double</span><span class="p">.</span><span class="na">MIN_VALUE</span><span class="p">);</span> 
+
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Cast</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>10.5
+100
+10
+100.0
+2147483647
+-2147483648
+3.4028235E38
+1.4E-45
+1.7976931348623157E308
+4.9E-324
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Hack-1.5">
+<a class="anchor" href="#Hack-1.5" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 1.5<a class="anchor-link" href="#Hack-1.5"> </a>
+</h1>
+<ul>
+<li>Convert 123456.123456 into an integer </li>
+<li>Set 678901234567890 into an integer (what do you think will happen?)</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">CastActivity</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">double</span> <span class="n">num</span> <span class="o">=</span> <span class="mf">123456.123456</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">num2</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="n">num</span><span class="p">;</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num2</span><span class="p">);</span>
+
+        <span class="kt">int</span> <span class="n">thiswilloverflow</span> <span class="o">=</span> <span class="mi">678901234567890</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">CastActivity</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        int thiswilloverflow = </span><span class="ansi-black-intense-fg ansi-bold">678901234567890;</span>
+<span class="ansi-red-intense-fg ansi-bold">integer number too large</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Code-Example!">
+<a class="anchor" href="#Code-Example!" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code Example!<a class="anchor-link" href="#Code-Example!"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span> <span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">Scanner</span> <span class="n">sc</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"What is your name?"</span><span class="p">);</span>
+      <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="n">sc</span><span class="p">.</span><span class="na">next</span><span class="p">();</span> <span class="c1">//string</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">name</span><span class="p">);</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"How many pizzas do you want to buy?"</span><span class="p">);</span>
+      <span class="kt">int</span> <span class="n">pizzas</span> <span class="o">=</span> <span class="n">sc</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span> <span class="c1">//integer</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">pizzas</span><span class="p">);</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Do you have the discount (true/false)?"</span><span class="p">);</span>
+      <span class="kt">boolean</span> <span class="n">hasDiscount</span> <span class="o">=</span> <span class="n">sc</span><span class="p">.</span><span class="na">nextBoolean</span><span class="p">();</span> <span class="c1">//boolean</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">hasDiscount</span><span class="p">);</span>
+  
+      <span class="kt">double</span> <span class="n">price</span><span class="p">;</span> <span class="c1">//double, defaults to 0</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">hasDiscount</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">price</span> <span class="o">=</span> <span class="mf">1.20</span><span class="p">;</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="n">price</span> <span class="o">=</span> <span class="mf">2.10</span><span class="p">;</span>
+      <span class="p">}</span>
+  
+      <span class="kt">char</span> <span class="n">firstChar</span> <span class="o">=</span> <span class="n">name</span><span class="p">.</span><span class="na">charAt</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span> <span class="c1">//character</span>
+      <span class="kt">double</span> <span class="n">finalPrice</span> <span class="o">=</span> <span class="n">price</span> <span class="o">*</span> <span class="n">pizzas</span> <span class="o">*</span> <span class="mf">1.08</span><span class="p">;</span> <span class="c1">// adding taxes</span>
+  
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Hi "</span> <span class="o">+</span> <span class="n">firstChar</span> <span class="o">+</span> <span class="s">"! You have to pay "</span> <span class="o">+</span> <span class="p">(</span><span class="n">finalPrice</span><span class="p">)</span> <span class="o">+</span> <span class="s">" dollars."</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  
+  <span class="n">Main</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>What is your name?
+Kinish
+How many pizzas do you want to buy?
+6
+Do you have the discount (true/false)?
+true
+Hi K! You have to pay 7.776 dollars.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
