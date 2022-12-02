@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      5 min read
     
 </span></p>
 
@@ -232,6 +232,68 @@ window.onload = wrap_img;
 Name: John Doe Age: 30
 5
 1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// concatenation</span>
+
+<span class="n">String</span> <span class="n">text</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="p">;</span>
+<span class="n">String</span> <span class="n">anotherText</span> <span class="o">=</span> <span class="s">"World"</span><span class="p">;</span>
+<span class="n">String</span> <span class="n">combinedText</span> <span class="o">=</span> <span class="n">text</span><span class="p">.</span><span class="na">concat</span><span class="p">(</span><span class="n">anotherText</span><span class="p">);</span>
+
+<span class="c1">// formatting</span>
+
+<span class="n">String</span> <span class="n">formattedText</span> <span class="o">=</span> <span class="n">String</span><span class="p">.</span><span class="na">format</span><span class="p">(</span><span class="s">"Pi is equal to %.5f"</span><span class="p">,</span> <span class="n">Math</span><span class="p">.</span><span class="na">PI</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">formattedText</span><span class="p">);</span>
+
+<span class="c1">// string comparison</span>
+
+<span class="n">String</span> <span class="n">text1</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="p">;</span>
+<span class="n">String</span> <span class="n">text2</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="p">;</span>
+<span class="n">String</span> <span class="n">text3</span> <span class="o">=</span> <span class="s">"World"</span><span class="p">;</span>
+
+<span class="kt">boolean</span> <span class="n">isEqual</span> <span class="o">=</span> <span class="n">text1</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">text2</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">isEqual</span><span class="p">);</span>
+
+<span class="c1">// string comparison ignoring case</span>
+
+<span class="kt">boolean</span> <span class="n">isEqual</span> <span class="o">=</span> <span class="n">text1</span><span class="p">.</span><span class="na">equalsIgnoreCase</span><span class="p">(</span><span class="n">text2</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">isEqual</span><span class="p">);</span>
+
+<span class="c1">// string comparison with compareTo()</span>
+
+<span class="kt">int</span> <span class="n">result</span> <span class="o">=</span> <span class="n">text1</span><span class="p">.</span><span class="na">compareTo</span><span class="p">(</span><span class="n">text2</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">result</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Pi is equal to 3.14159
+true
+true
+0
 </pre>
 </div>
 </div>

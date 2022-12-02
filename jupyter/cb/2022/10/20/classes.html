@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      4 min read
     
 </span></p>
 
@@ -223,6 +223,425 @@ window.onload = wrap_img;
     <span class="k">return</span> <span class="s">"Name: "</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">" Calories: "</span> <span class="o">+</span> <span class="n">calories</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// example class</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ExampleClass</span> <span class="p">{</span>
+
+    <span class="c1">// class variables</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="n">attribute</span><span class="p">;</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="n">field</span><span class="p">;</span>
+
+    <span class="c1">// use this to initialize the class</span>
+    <span class="kd">public</span> <span class="nf">ExampleClass</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">attribute</span> <span class="o">=</span> <span class="s">"this is an attribute"</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">method</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">String</span> <span class="n">field</span> <span class="o">=</span> <span class="s">"this is a local variable"</span><span class="p">;</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">field</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">field</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// demo</span>
+
+<span class="n">ExampleClass</span> <span class="n">example</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ExampleClass</span><span class="p">();</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">example</span><span class="p">.</span><span class="na">attribute</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>this is an attribute
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// main and tester methods</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Hello World"</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">tester</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Hello World test"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// demo</span>
+
+<span class="n">Main</span> <span class="n">main</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Main</span><span class="p">();</span>
+<span class="n">main</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+<span class="n">main</span><span class="p">.</span><span class="na">tester</span><span class="p">();</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello World
+Hello World test
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// inheritance and extends</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ExampleClass</span> <span class="kd">extends</span> <span class="n">Main</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="nf">ExampleClass</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">method</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"this is a method"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// demo</span>
+
+<span class="n">ExampleClass</span> <span class="n">example</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ExampleClass</span><span class="p">();</span>
+<span class="n">example</span><span class="p">.</span><span class="na">method</span><span class="p">();</span>
+<span class="n">example</span><span class="p">.</span><span class="na">tester</span><span class="p">();</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>this is a method
+Hello World test
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// subclass constructor</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ExampleClass</span> <span class="kd">extends</span> <span class="n">Main</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="nf">ExampleClass</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="nf">ExampleClass</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">();</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">name</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">method</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"this is a method"</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">method</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">)</span> <span class="p">{</span>   <span class="c1">// overloading</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"this is a method "</span> <span class="o">+</span> <span class="n">name</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="c1">// overriding a method</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">tester</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"this is an overridden method"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// abstract class and method</span>
+
+<span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">AbstractClass</span> <span class="p">{</span>
+  
+  <span class="c1">// abstract method does not have a body    </span>
+  <span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">method</span><span class="p">();</span>
+  <span class="c1">// abstract class can have both abstract and regular methods</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">regularMethod</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"regular method"</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">ExampleClass</span> <span class="kd">extends</span> <span class="n">AbstractClass</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="nf">ExampleClass</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">method</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"this is a specific implementation of the abstract method"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// demo</span>
+
+<span class="n">ExampleClass</span> <span class="n">example</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ExampleClass</span><span class="p">();</span>
+<span class="n">example</span><span class="p">.</span><span class="na">method</span><span class="p">();</span>
+<span class="n">example</span><span class="p">.</span><span class="na">regularMethod</span><span class="p">();</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>this is a specific implementation of the abstract method
+regular method
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// hashcode and equals</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ExampleClass</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="n">String</span> <span class="n">name</span><span class="p">;</span>
+    <span class="kd">public</span> <span class="kt">int</span> <span class="n">age</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">ExampleClass</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">age</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">age</span> <span class="o">=</span> <span class="n">age</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">equals</span><span class="p">(</span><span class="n">Object</span> <span class="n">obj</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">obj</span> <span class="o">==</span> <span class="k">this</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">obj</span> <span class="k">instanceof</span> <span class="n">ExampleClass</span><span class="p">))</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">ExampleClass</span> <span class="n">example</span> <span class="o">=</span> <span class="p">(</span><span class="n">ExampleClass</span><span class="p">)</span> <span class="n">obj</span><span class="p">;</span>
+        <span class="k">return</span> <span class="n">example</span><span class="p">.</span><span class="na">name</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">name</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">example</span><span class="p">.</span><span class="na">age</span> <span class="o">==</span> <span class="k">this</span><span class="p">.</span><span class="na">age</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">hashCode</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">Objects</span><span class="p">.</span><span class="na">hash</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">name</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="na">age</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// demo</span>
+
+<span class="n">ExampleClass</span> <span class="n">example1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ExampleClass</span><span class="p">(</span><span class="s">"John"</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
+<span class="n">ExampleClass</span> <span class="n">example2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ExampleClass</span><span class="p">(</span><span class="s">"John"</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">example1</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">example2</span><span class="p">));</span>
+
+<span class="c1">// interfaces</span>
+
+<span class="kd">interface</span> <span class="nc">Interface</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">method</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">ExampleClass</span> <span class="kd">implements</span> <span class="n">Interface</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="nf">ExampleClass</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">method</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"this is a specific implementation of the interface method"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// demo</span>
+
+<span class="n">ExampleClass</span> <span class="n">example</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ExampleClass</span><span class="p">();</span>
+<span class="n">example</span><span class="p">.</span><span class="na">method</span><span class="p">();</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>true
+this is a specific implementation of the interface method
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// hashcode of string</span>
+
+<span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"John"</span><span class="p">;</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">name</span><span class="p">.</span><span class="na">hashCode</span><span class="p">());</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2314539
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Interface vs Abstract Class</p>
+<ul>
+<li>Abstract class can have instance variables and methods</li>
+<li>Interface can only have methods; meant to achieve security</li>
+<li>Abstract class can be extended by a class, whereas Interface is implemented (a class can have multiple interfaces)</li>
+<li>Abstract class can have a constructor, whereas Interface cannot</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Big O notation for Hash map, Binary Search, Single loop, Nested loop</p>
+<ul>
+<li>Hash map: O(1)</li>
+<li>Binary Search: O(log n)</li>
+<li>Single loop: O(n)</li>
+<li>Nested loop: O(n^2)</li>
+</ul>
 
 </div>
 </div>
