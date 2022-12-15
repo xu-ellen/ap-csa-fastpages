@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      10 min read
+      11 min read
     
 </span></p>
 
@@ -1227,6 +1227,52 @@ Current users in database ---
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// extra advanced implementations of hashmaps</span>
+
+<span class="c1">// this is a hashmap that stores the name of a user and their password</span>
+<span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span> <span class="n">String</span><span class="o">&gt;</span> <span class="n">userPass</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span> <span class="n">String</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span> <span class="n">String</span><span class="o">&gt;</span> <span class="n">userEmail</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span> <span class="n">String</span><span class="o">&gt;</span><span class="p">();</span>
+
+<span class="c1">// use hashmap method</span>
+<span class="n">userPass</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="s">&quot;Kian&quot;</span><span class="p">,</span> <span class="s">&quot;password&quot;</span><span class="p">);</span>
+
+<span class="c1">// show current users in hashmap</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">userPass</span><span class="p">);</span>
+
+<span class="c1">// remove user from hashmap</span>
+<span class="n">userPass</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="s">&quot;Kian&quot;</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">userPass</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{Kian=password}
+{}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 &lt;/div&gt;
  
 
